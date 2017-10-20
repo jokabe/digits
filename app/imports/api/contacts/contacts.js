@@ -6,9 +6,9 @@ import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 export const Contacts = new Mongo.Collection('contacts');
 
 /**
- * Create the schema for Stuff
+ * Create the schema for Contacts
  */
-export const ContactsSchema = new SimpleSchema({
+export const contactsSchema = new SimpleSchema({
   first: {
     label: 'first',
     type: String,
@@ -41,4 +41,4 @@ export const ContactsSchema = new SimpleSchema({
   },
 });
 
-Contacts.attachSchema(ContactsSchema);
+Contacts.attachSchema(contactsSchema);
