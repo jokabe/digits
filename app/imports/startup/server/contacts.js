@@ -17,7 +17,7 @@ const contactSeeds = [
  * Initialize the Contacts collection if empty with seed data.
  */
 if (Contacts.find().count() === 0) {
-  _.each(contactSeeds, function seedContacts(contacts) {
-    Contacts.insert(contacts);
+  _.each(contactSeeds, function seedContacts(contact) {
+    Contacts.insert(contact);
   });
 }
